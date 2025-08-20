@@ -94,8 +94,7 @@ def word_count(str):
     return counts_x[-2]
 
 
-print(word_count(
-    'Bá tước Monte Cristo (Le Comte de Monte Cristo) là một tiểu thuyết phiêu lưu của Alexandre Dumas. Cùng với một tác phẩm khác của ông là Ba người lính ngự lâm, tác phẩm thường được xem là tác phẩm văn học nổi tiếng nhất của Dumas. Cuốn sách này đã được viết xong năm 1844. Giống như nhiều tiểu thuyết khác của ông, tiểu thuyết này đã được mở rộng từ cốt truyện do người giúp việc cho nhà văn Auguste Maquet cộng tác. Câu chuyện xảy ra tại Pháp, Ý, các đảo trong Địa Trung Hải và Levant trong thời kỳ các sự kiện lịch sử trong năm 1815–1838 (ngay trước sự kiện Một trăm ngày dưới sự cai trị của Louis-Philippe của Pháp). Sự sắp đặt lịch sử là yếu tố cơ bản của cuốn sách. Câu chuyện chủ yếu liên quan đến các chủ đề công lý, sự báo thù, lòng từ bi, và lòng khoan dung, và được kể theo phong cách một câu chuyện phiêu lưu.'))
+print(word_count('Bá tước Monte Cristo (Le Comte de Monte Cristo) là một tiểu thuyết phiêu lưu của Alexandre Dumas. Cùng với một tác phẩm khác của ông là Ba người lính ngự lâm, tác phẩm thường được xem là tác phẩm văn học nổi tiếng nhất của Dumas. Cuốn sách này đã được viết xong năm 1844. Giống như nhiều tiểu thuyết khác của ông, tiểu thuyết này đã được mở rộng từ cốt truyện do người giúp việc cho nhà văn Auguste Maquet cộng tác. Câu chuyện xảy ra tại Pháp, Ý, các đảo trong Địa Trung Hải và Levant trong thời kỳ các sự kiện lịch sử trong năm 1815–1838 (ngay trước sự kiện Một trăm ngày dưới sự cai trị của Louis-Philippe của Pháp). Sự sắp đặt lịch sử là yếu tố cơ bản của cuốn sách. Câu chuyện chủ yếu liên quan đến các chủ đề công lý, sự báo thù, lòng từ bi, và lòng khoan dung, và được kể theo phong cách một câu chuyện phiêu lưu.'))
 
 # 57.Write a Python program to remove spaces from a given string.
 z = 'Bocchan is a seal'
@@ -142,3 +141,4 @@ def capitalize_first_letter(str1):
 
 print(capitalize_first_letter('pipopipopi'))
 print(capitalize_first_letter('nobody new'))
+
