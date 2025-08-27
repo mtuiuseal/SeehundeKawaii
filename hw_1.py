@@ -42,7 +42,6 @@ def play_game(difficulty, money):
     print(f"Sorry, you've run out of attempts. The number was {secret_number}.")
     return False
 
-
 def main():
     money = 100
     games_played = 0
