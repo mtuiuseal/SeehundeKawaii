@@ -96,9 +96,10 @@ print('Perfect numbers less than 1000:')
 print([ num for num in range(2, 1000) if is_perfect(num) ])
 
 # 8.Write a Python function to check whether a string is a pangram or not.
-# (Note : Pangrams are words or sentences containing every letter of the alphabet at least once. For example : "The quick brown fox jumps over the lazy dog"
+# (Note : Pangrams are words or sentences containing every letter of the alphabet at least once. For example : "The quick brown fox jumps over the lazy dog")
 import string
 
 s = 'Pack my box with five dozen liquor jugs'
 p = all(letter in s.lower() for letter in string.ascii_lowercase)
 print(p)
+
