@@ -95,13 +95,14 @@ for char in d:
     else:
         dem = int(stat[char]['count']) + 1
         possi = list(stat[char]['position'])
+        possi.append(pos)
         stat[char] = {'count': dem, 'position': possi}
 
     pos += 1
 
 keys = sorted(stat.keys())
 for key in keys:
-    print(f'Character "{key}" appears {stat[key]['count']} times')
+    print(f'Character "{key}" appears {stat[key]['count']} times, at {stat[key]['position']}')
 
 
 # 3. Write a program using a dictionary containing keys starting from 1 and values containing prime numbers less than a value N.
@@ -128,6 +129,7 @@ n_value = 80
 prime_num = prime_dict(n_value)
 print(f'Prime num less than {n_value} with keys start from 1:')
 print(prime_num)
+
 
 
 
