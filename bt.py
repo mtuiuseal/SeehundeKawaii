@@ -80,31 +80,21 @@ b['hi']['hello'] = 'ok'
 print(b)
 
 # 2. Write a Python program that counts the number of times characters appear in a text paragraph.
-d = ('Create a dictionary by extracting the keys from a given dictionary',
-     'Delete a list of keys from a dictionary',
-     'Check if a value exists in a dictionary',
-     'Rename key of a dictionary')
-d = d.lower()
-stat = {}
-pos = 0
-for char in d:
-    dem = 1
-    if stat.get(char) is None:
-        item = {'count': dem, 'position': [pos]}
-        stat[char] = item
-    else:
-        dem = int(stat[char]['count']) + 1
-        possi = list(stat[char]['position'])
-        possi.append(pos)
-        stat[char] = {'count': dem, 'position': possi}
+s = '''Create a dictionary by extracting the keys from a given dictionary.
+Delete a list of keys from a dictionary.
+Check if a value exists in a dictionary.
+Rename key of a dictionary.'''
 
-    pos += 1
+s = s.lower()
+stat = {}
+
+for char in s:
+    stat[char] = stat.get(char, 0) + 1
 
 keys = sorted(stat.keys())
 for key in keys:
-    print(f'Character "{key}" appears {stat[key]['count']} times, at {stat[key]['position']}')
-
-
+    print(f"Character '{key}' appears {stat[key]} times")
+    
 # 3. Write a program using a dictionary containing keys starting from 1 and values containing prime numbers less than a value N.
 def prime(num):
     if num <= 1:
